@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.airplane_h1 {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 50px;
+}
+
+.airplane_container {
+    width: 100%;
+    margin-bottom: -8%;
+}
+
+.airplane {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.airplane img {
+    width: 600px;
+    border: 3px black solid;
+    border-radius: 10px;
+    margin-left: 4%;
+}
+
+.airplane p {
+    margin-right: 4%;
+    padding-top: 19px;
+    width: 750px;
+    float: right;
+    font-size: 25px;
+}
+
+.countries_h1 {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 50px;
+}
+
+.countries_container {
+    width: 100%;
+}
+
+.countries {
+    width: 100%;
+    height: 500px;
+    margin-top: 5%;
+}
+
+.p_l, .p_r {
+    font-size: 50px;
+    padding-top: 13%;
+    word-spacing: 15px;
+}
+
+.p_r {
+    float: right;
+    margin-right: 20%;
+}
+
+.p_l {
+    margin-left: 20%;
+
+}
+
+.img_l, .img_r {
+    width: 700px;
+    border: 3px black solid;
+    border-radius: 10px;
+}
+
+.img_l {
+    margin-left: 5%;
+}
+
+.img_r {
+    float: right;
+    margin-right: 5%;
+}
+
+.personal_h1 {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 50px;
+}
+
+.personal_container {
+    text-align: center;
+    margin-bottom: -10%;
+}
+
+.personal {
+    display: inline-block;
+    margin: 4% 2% 2% 2%;
+}
+
+.personal img {
+    width: 400px;
+}
+
+.p_img {
+    width: 400px;
+    height: 400px;
+}
+
+.person_name {
+    position: absolute;
+    transform: scale(0);
+    color: rgba(230, 230, 230, 0.7);
+    transform: translateX(10px) translateY(-30px) scale(0);
+}
+
+.p_img:hover img{
+    filter: brightness(0.60); 
+    -webkit-filter:brightness(0.60);
+    transition: .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.p_img:hover .person_name{
+    transition: .2s ease-in-out;
+    transform: translateX(-5px) translateY(-55px) scale(1);
+}
+
+.personal p {
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}

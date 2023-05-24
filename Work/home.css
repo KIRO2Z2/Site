@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider_line {
+    display: flex;
+    transition: all 1s;
+}
+
+.slider_img {
+    width: 100%;
+    filter: brightness(0.25); 
+    -webkit-filter:brightness(0.25);
+}
+
+.slider_prev, .slider_next {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: rgba(100, 100, 100, 0.6);
+    background-color: transparent;
+    border: 0;
+    line-height: 1;
+}
+
+.slider_prev {
+    transform: translateY(-50%) rotate(180deg);
+    left: 0;
+    margin-left: 6px;
+}
+
+
+.slider_next{
+    transform: translateY(-50%);
+    right: 0;
+    margin-right: 6px;
+}
+
+.slider_prev:hover, .slider_next:hover {
+    cursor: pointer;
+    color: rgba(130, 130, 130, 0.9);
+}
+
+.slider_prev:active {
+    transform: scale(1.05) translateY(-50%) rotate(180deg);
+}
+
+.slider_next:active {
+    transform: scale(1.05) translateY(-50%);
+}
+
+.order {
+    position: absolute;
+    z-index: 1;
+    background-color: brown;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    margin-top: 21%;
+    left: 40%;
+    border: rgb(101, 28, 28) solid;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.order:hover {
+    box-shadow: inset 0 0 30px rgb(226, 17, 17);
+    transform: scale(1.1);
+}
+
+.order_text {
+    position: relative;
+    top: 36%;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    
+}
+
+.order_w {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 3;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+
+.order_w.active {
+    transform: translateY(0%) scale(100%);
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.order_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.order_body {
+     margin: auto;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 100px 15px;
+    position: relative;
+}
+
+.order_body p {
+    font-size: 26px;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.order_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.description_container {
+    background-color: rgba(197, 135, 135, 0.3);
+    width: 100%;
+    height: 600px;
+    padding-top: 190px;
+    border-top: 7px solid rgba(169, 114, 114, 0.5);
+}
+
+.description {
+    width: 40%;
+    margin-left: 28%;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 4px #d7d7d7 solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 50px rgba(255, 255, 0, 0.1);
+}
+
+.company {
+    text-align: center;
+}
+
+.company_text {
+    font-family: Gill Sans, sans-serif;
+    font-size: 21px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.airplane_s {
+    position: absolute;
+    z-index: -1;
+    margin-left: 15%;
+    margin-top: -28%;
+    transform: rotate(-60deg);
+    font-size: 900px;
+    color: #0000001b;
+}
+
+.polygon {
+    width: 100%;
+    height: 160px;
+}
+
+.button_container {
+    height: 250px;
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.butt {
+    text-align: center;
+    width: 280px;
+    height: 280px;
+    background-color: brown;
+    display: inline-block;
+    position: relative;
+    margin: 0 70px 0 70px;
+    font-size: 30px;
+    color: white;
+    border: rgb(101, 28, 28) solid;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.butt:hover {
+    box-shadow: inset 0 0 40px 5px rgb(226, 17, 17);
+    transform: scale(1.1);
+}
+
+.b1 {
+    margin-top: 39%;
+}
+
+.b2 {
+    margin-top: 43%;
+}
+
+.b3 {
+    margin-top: 38%;
+}

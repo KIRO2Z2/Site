@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ThunderLine</title>
+    <link rel="stylesheet" href="../line.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hat">
+            <p class="TL">ThunderLine</p>
+            <div class="link_a" onclick="location.href='Airplane.html'">
+                <a>Літаки</a>
+            </div>
+            <div class="link_c" onclick="location.href='Countries.html'">
+                <a>Авіасполучення</a>
+            </div>
+            <div class="link_p" onclick="location.href='Person.html'">
+                <a>Персонал</a>
+            </div>
+            <div class="button_h" onclick="location.href='../home.html'">
+                <a>Головна</a>
+            </div>
+            <div class="button" id="open_pop_up">
+                <a href="#" >Log in</a>
+            </div>
+        <div>
+        <div class="pop_up" id="pop_up">
+            <div class="pop_up_container">
+                <div class="pop_up_body" id="pop_up_body">
+                    <p>Реєстрація</p>
+                    <form name="reg">
+                        <input type="text" id="mail" placeholder="Електронна пошта">
+                        <input type="text" id="pas" placeholder="Пароль">
+                        <div class="error" id="error"></div>
+                        <button type="button" onclick="check()">Підтвердити</button>
+                    </form>
+                    <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="countries_h1">Країни в які ми здійснюємо перельоти:</h1>
+    <div class="countries_container">
+        <div class="countries"><img src="../Img/cAmerica.jpg" class="img_l">
+            <div class="p_r"><p>— Америка</p></div>
+        </div>
+        <div class="countries"><img src="../Img/cGermany.jpg" class="img_r">
+            <div class="p_l"><p>Германія  —</p></div>
+        </div>
+        <div class="countries"><img src="../Img/cUkraine.jpg" class="img_l">
+            <div class="p_r"><p>—  Україна</p></div>
+        </div>
+        <div class="countries"><img src="../Img/cJapan.jpg" class="img_r">
+            <div class="p_l"><p>Японія  —</p></div>
+        </div>
+        <div class="countries"><img src="../Img/cKazakhstan.jpg" class="img_l">
+            <div class="p_r"><p>—  Казахстан</p></div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <div>
+            <p class="foot_end"> &#0169 ThunderLine Company.<br>Сайт зроблений Владом Руденко з групи 1П-20.</p>
+        </div>
+    </footer>
+    <script src="../home.js"></script>
+</body>
+</html>
